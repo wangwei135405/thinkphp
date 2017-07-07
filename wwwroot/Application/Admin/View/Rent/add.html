@@ -1,0 +1,64 @@
+<extend name="Public/base"/>
+
+<block name="body">
+    <div class="main-title">
+        <h2>新增用户</h2>
+    </div>
+    <form action="{:U()}" method="post" class="form-horizontal">
+        <div class="form-item">
+            <label class="item-label">标题<span class="check-tips"></span></label>
+            <div class="controls">
+                <input type="text" class="text input-large" name="title" value="value="{$date.sort|default=0}">
+            </div>
+        </div>
+        <div class="form-item">
+            <label class="item-label">价格<span class="check-tips"></span></label>
+            <div class="controls">
+                <input type="text" class="text input-large" name="price" value="">
+            </div>
+        </div>
+        <div class="form-item">
+            <label class="item-label">类型<span class="check-tips"></span></label>
+            <select class="item-label" name="type">
+                <option value="1">出租</option>
+                <option value="2">销售</option>
+            </select>
+        </div>
+        <div class="form-item">
+            <label class="item-label">上传图片<span class="check-tips"></span></label>
+            <div class="controls">
+                <input type="text" class="text input-large" name="img" value="">
+            </div>
+        </div>
+        <div class="form-item">
+            <label class="item-label">内容<span class="check-tips"></span></label>
+                <textarea name="content" ></textarea>
+            </div>
+        <div class="form-item">
+            <label class="item-label">描述<span class="check-tips"></span></label>
+            <div class="controls">
+                <textarea name="description"></textarea>
+            </div>
+        </div>
+        <div class="form-item">
+            <label class="item-label">截止时间<span class="check-tips"></span></label>
+            <div class="controls">
+                <input type="date" class="text input-large" name="date" value="">
+            </div>
+        </div>
+        <div class="form-item">
+            <label class="item-label">电话<span class="check-tips"></span></label>
+            <div class="controls">
+                <input type="text" class="text input-large" name="tel" value="">
+            </div>
+        </div>
+            <input type="submit" value="提交"/>
+    </form>
+</block>
+
+<!--<block name="script">-->
+    <!--<script type="text/javascript">-->
+        <!--//导航高亮-->
+        <!--highlight_subnav('{:U('Rent/index')}');-->
+    <!--</script>-->
+<!--</block>-->
